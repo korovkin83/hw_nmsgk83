@@ -1,4 +1,0 @@
-echo "Linux Modules:"
-
-lsmod | cut -d' ' -f1 | xargs modinfo | egrep '^name|^filename|^description|^author'
-echo "STOP..."
